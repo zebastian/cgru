@@ -1,2 +1,5 @@
-base
 dockerhub.token
+base
+windows-x64
+linux-x64
+darwin-x64
