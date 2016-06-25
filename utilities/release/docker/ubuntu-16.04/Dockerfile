@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM ubuntu:16.04
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update \
  && apt-get -yqq install \
@@ -11,7 +11,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update \
 	libopenexr-dev \
 	libqt4-dev \
 	libpqxx3-dev \
-	make \
+	bc \
  && apt-get -yqq clean \
  && rm -rf /var/lib/apt/lists/*
 
@@ -20,4 +20,4 @@ WORKDIR /opt/cgru
 
 RUN cd utilities/exrjoin && ./build.sh
 RUN cd afanasy/src/project.cmake && ./build.sh
-RUN cd utilities/release && ./make_linuxpackages.sh --skipcheck
+RUN cd utilities/release && ./make_linuxpackages.sh
