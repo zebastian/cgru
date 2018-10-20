@@ -1,5 +1,6 @@
 #!/bin/bash
 # test
+# test 2
 
 # Set CGRU root:
 export CGRU_LOCATION=$PWD
