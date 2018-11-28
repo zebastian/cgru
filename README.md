@@ -1,7 +1,7 @@
 ## CGRU <img src="https://raw.githubusercontent.com/CGRU/cgru/master/favicon.ico" align="right" width="90">
 
 CGRU is the Computer Graphics Tools Pack.
- test 3
+ test 4
  
 It consists of the main tools _Afanasy_ and _Rules_.
 Other tools are arranged as satellites around these two,
